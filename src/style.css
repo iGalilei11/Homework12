@@ -23,7 +23,7 @@ body {
     height: 39.16px; 
 }
 
-.top_promo_left .logo {
+.top_promo_left img {
     max-width: 33.39px;
     max-height: 34.67px;
 }
@@ -48,6 +48,12 @@ body {
     max-height: 16px;  
 } 
 
+@media screen and (max-width:768px) {
+    .top_promo_center {
+        display: none;
+    }
+}
+
 .top_promo_right {
     display: flex;
     width: 127px;
@@ -69,6 +75,12 @@ body {
     text-decoration: none;
     padding-left: 5px; 
     color: black; 
+}
+
+@media screen and (max-width:768px) {
+    .top_promo_language {
+        display: none;
+    }
 }
 
 /* MAIN 1 */
@@ -95,8 +107,6 @@ body {
     color: #1B1D1F;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    max-width: 284px;
-    max-height: 89px;  
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);   
 }
 
@@ -127,19 +137,16 @@ body {
     display: flex;
     justify-content: space-between;
     padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .footer_promo_buttom1 {
-    display: flex;
     width: 100px;
     height: 35px;
 }
 
 .footer_promo_buttom1 {
-    padding-left: 10px;
-}
-
-.footer_promo_buttom1 .buttom1 {
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
     font-size: 14px;
@@ -148,26 +155,21 @@ body {
     background: linear-gradient(97.59deg, #46B1DE 9.8%, #0591CC 95.1%);
     box-shadow: 0px 1.14444px 5.72222px #46B1DE;
     border-radius: 4.57778px;
-    border: 1px solid rgb(0, 0, 0, 0);
+    /* border: 1px solid rgb(0, 0, 0, 0); */
     padding: 7.5px 8px;  
 }
 
-.footer_promo_buttom1 .buttom1 a {
+.footer_promo_buttom1 {
     text-decoration: none;
     color: #FFFFFF;
 }
 
 .footer_promo_buttom2 {
-    display: flex;
     width: 100px;
     height: 35px;
 }
 
 .footer_promo_buttom2 {
-    padding-right: 10px;
-}
-
-.footer_promo_buttom2 .buttom2 {
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
     font-size: 14px;
@@ -177,24 +179,25 @@ body {
     mix-blend-mode: normal;
     box-shadow: 0px 2px 10px #DDE0DC;
     border-radius: 8px;
-    border: 1px solid rgb(0, 0, 0, 0);
-    padding: 7.5px 22.5px;  
+    /* border: 1px solid rgb(0, 0, 0, 0); */
+    padding: 7.5px 8px;  
 }
 
-.footer_promo_buttom2 .buttom2 a {
+.footer_promo_buttom2  {
     text-decoration: none;
     color: #46B1DE;
 }
 
-.img_promo {
+.img_promo img {
+    margin: 0 auto;
     display: block;
     width: 208px;
-    height: 199px;
-    padding-top: 74px;
-    margin: 0 auto;
-    padding-left: calc(50vw-104px);
-    padding-right: calc(50vw-104px);
+    /* max-height: 199px; */
+    padding-top: 42px;
+    padding-left: calc(50vw-204px);
+    padding-right: calc(50vw-204px);
 }
+
 
 /* CHOOSE 1 */
 
@@ -205,7 +208,7 @@ body {
     flex-direction: column;
     padding-top: 30px;
     padding-bottom: 30px;
-    width: 300px;  
+    max-width: 300px;  
     text-align: center;  
 }
 
@@ -237,7 +240,7 @@ body {
 
 .mod_choose {
     margin: 0 auto;
-    width: 250px;
+    max-width: 250px;
     min-height: 800px;
     display: flex;
     justify-content: center;
@@ -245,6 +248,15 @@ body {
     padding: 10px;
     background-color: #A1C7D4;
     border-radius: 15px;
+}
+
+.mod_choose_side1,
+.mod_choose_side2,
+.mod_choose_side3 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 250px;
 }
 
 .mod_choose_frame {
@@ -310,7 +322,6 @@ body {
     margin: 30px auto; 
 }
 
-
 .make_choose_blo {
     margin: 0 auto;
     padding: 10px;
@@ -350,6 +361,13 @@ body {
     height: 170px;
 }
 
+.make_choose_side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 105px;
+}
+
 .make_choose_but {
     margin: 0 auto;
     display: flex;
@@ -360,11 +378,11 @@ body {
     background-color: #D9D9D9;
     border-radius: 8px;
     padding: 2px 8px;
-    
 }
 
 .make_choose_but img {
-    max-width: 80%;
+    max-width: 10%;
+    
 }
 
 .make_choose_sing {
@@ -385,7 +403,6 @@ body {
     color: #FFFFFF;
     text-transform: uppercase;
 }
-
 
 .make_choose_photo {
     margin: 0 auto;
@@ -414,8 +431,9 @@ body {
     align-items: center;
 }
 
-.top_footer_top .logo {
-    max-width: 90%;
+.top_footer_top img {
+    width: 55px;
+    height: 57px;
 }
 
 .top_footer_top .text {
@@ -589,6 +607,10 @@ body {
     font-size: 17px;
     line-height: 23px;
     color: #FFFFFF;
+}
+
+.main_footer_soc {
+    display: none;
 }
 
 .main_footer_insta {
