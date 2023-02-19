@@ -198,6 +198,9 @@ body {
     padding-right: calc(50vw-204px);
 }
 
+.pod_promo {
+    display: none;
+}
 
 /* CHOOSE 1 */
 
