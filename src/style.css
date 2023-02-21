@@ -155,7 +155,7 @@ body {
     background: linear-gradient(97.59deg, #46B1DE 9.8%, #0591CC 95.1%);
     box-shadow: 0px 1.14444px 5.72222px #46B1DE;
     border-radius: 4.57778px;
-    /* border: 1px solid rgb(0, 0, 0, 0); */
+    border: 1px solid rgb(0, 0, 0, 0.5);
     padding: 7.5px 8px;  
 }
 
@@ -179,7 +179,7 @@ body {
     mix-blend-mode: normal;
     box-shadow: 0px 2px 10px #DDE0DC;
     border-radius: 8px;
-    /* border: 1px solid rgb(0, 0, 0, 0); */
+    border: 1px solid rgb(0, 0, 0, 0.5);
     padding: 7.5px 8px;  
 }
 
@@ -192,7 +192,6 @@ body {
     margin: 0 auto;
     display: block;
     width: 208px;
-    /* max-height: 199px; */
     padding-top: 42px;
     padding-left: calc(50vw-204px);
     padding-right: calc(50vw-204px);
@@ -397,6 +396,7 @@ body {
     align-items: center;
     color: #FFFFFF;
     background-color: #46B1DE;
+    border: 1px solid rgb(0, 0, 0, 0.5);
     border-radius: 8px;
     padding: 2px 8px;
     font-family: 'Roboto', sans-serif;
